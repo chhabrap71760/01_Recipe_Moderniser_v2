@@ -42,7 +42,7 @@ while stop != "xxx":
 
     # Stop loopin if exit code is typed and there are more
     # than 2 ingredients...
-    if get_ingredients.lower() == "xxx" and len(ingredients)  >1:
+    if get_ingredient.lower() == "xxx" and len(ingredients)  >1:
         break
 
     elif get_ingredient.lower() == "xxx" and len(ingredients) <2:
@@ -54,3 +54,4 @@ while stop != "xxx":
         ingredients.append(get_ingredient)
 
 # Output list
+print(ingredients)
