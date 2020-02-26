@@ -56,23 +56,31 @@ ingredients = []
 # Loop to ask users to enter an ingredient
 stop = ""
 while stop != "xxx":
-    # Ask user for ingredients (via not blank function)
-    get_ingredient = not_blank("Please type in an ingredient name"
-                               "This can't be blank",
-                               "yes")
 
-    # Stop loopin if exit code is typed and there are more
+    # Stop looping if exit code is typed and there are more
     # than 2 ingredients...
-    if get_ingredient.lower() == "xxx" and len(ingredients)  >1:
+    if amount.lower() == "xxx" and len(ingredients)  >1:
         break
 
-    elif get_ingredient.lower() == "xxx" and len(ingredients) <2:
+    elif amount.lower() == "xxx" and len(ingredients) <2:
         print("You need at least two ingredients in the list. "
               "Please add more ingredients.")
         
-    # If exit is not entered, add ingredient ot list
+    # If exit code is not entered, add ingredient to list
     else:
-        ingredients.append(get_ingredient)
+        # Ask user for ingredient
+        get_ingredient = not_blank("Please type in an ingredient name:"
+                                   "This can't be blank"
+                                   "yes")
+        Amount = float(amount) * scale_factor
+
+        # Remove decimal point for whole numbers
+        if amount  % 1 == 0:
+            amount = int(amount)
+        elif amount * 10 % 1 == 0:
+            amount = "{:.1f}".format(amount)
+        else:
+            amount = "{:.2f}"
 
 # Output list
 print(ingredients)

@@ -27,6 +27,6 @@ def not_blank(question):
 
 # Main Routine goes here
 
-recipe_name = input("What is the recipe name? ")
+recipe_name = not_blank("What is the recipe name? ")
 
 print("You are making {}".format(recipe_name))
