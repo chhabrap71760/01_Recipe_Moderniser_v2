@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <content url="file:H:/../../../..//H:/Documents/COM201/Programming/01_Recipe_Moderniser" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.5.2 (C:\Program Files\Python35\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

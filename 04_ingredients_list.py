@@ -36,11 +36,11 @@ ingredients = []
 stop = ""
 while stop != "xxx":
     # Ask user for ingredients (via not blank function)
-    get_ingredient = not_blank("Please type in an ingredient name"
+    get_ingredient = not_blank("Please type in an ingredient name: "
                                "This can't be blank",
                                "yes")
 
-    # Stop loopin if exit code is typed and there are more
+    # Stop looping if exit code is typed and there are more
     # than 2 ingredients...
     if get_ingredient.lower() == "xxx" and len(ingredients)  >1:
         break

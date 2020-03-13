@@ -75,12 +75,15 @@ while stop != "xxx":
         Amount = float(amount) * scale_factor
 
         # Remove decimal point for whole numbers
-        if amount  % 1 == 0:
+        if amount % 1 == 0:
             amount = int(amount)
         elif amount * 10 % 1 == 0:
             amount = "{:.1f}".format(amount)
         else:
             amount = "{:.2f}"
 
-# Output list
-print(ingredients)
+        ingredients.append("{} units {}".format(amount, get_ingredient))
+
+# Output List
+for item in ingredients:
+    print(item)

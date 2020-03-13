@@ -1,4 +1,4 @@
-# To Do
+0# To Do
 
 # Ask user for servings made by recipe (and check that this is a number that is more than
 # Ask user for servings desired (check this is a number)
@@ -26,6 +26,8 @@ def num_check(question):
 
         except ValueError:
             print(error)
+
+serving_size = num_check("What is the recipe serving size? ")
 
 # Main Routine goes here
 dodgy_sf = "yes"
